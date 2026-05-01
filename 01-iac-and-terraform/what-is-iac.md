@@ -73,6 +73,7 @@ You define the desired end state.
 Terraform is declarative.
 
 Example:
+hcl
 
 resource "aws_s3_bucket" "example" {
   bucket = "my-bucket"
@@ -84,7 +85,7 @@ Imperative (HOW to do it)
 You specify step‑by‑step instructions.
 
 Example:
-
+code
 aws s3 mb s3://my-bucket
 aws s3api put-bucket-versioning ...
 
